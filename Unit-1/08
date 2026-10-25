@@ -1,0 +1,16 @@
+DECLARE
+    V_NAME VARCHAR2(50) := 'Pankaj';
+    V_SALARY NUMBER(10,2);
+    V_EID NUMBER(6);
+BEGIN
+    V_SALARY := 50000.342;
+    V_EID := 101;
+
+    DBMS_OUTPUT.PUT_LINE('Name: ' || V_NAME);
+    DBMS_OUTPUT.PUT_LINE('Employee ID: ' || V_EID);
+    DBMS_OUTPUT.PUT_LINE('Salary: ' || V_SALARY);
+    DBMS_OUTPUT.PUT_LINE('Annual Salary: ' || V_SALARY * 12);
+    DBMS_OUTPUT.PUT_LINE('50% Salary: ' || V_SALARY * 0.5);
+END;
+/
+
